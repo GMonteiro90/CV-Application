@@ -1,13 +1,28 @@
-function Display({personalInfoData, educationInfoData}) {
+function Display({personalInfoData, educationInfoData, workInfoData}) {
     return (
         <div>
-            <p>{personalInfoData.name}</p>
-            <p>{personalInfoData.email}</p>
-            <p>{personalInfoData.phone}</p>
-            <p>{personalInfoData.address}</p>
-            <p>{educationInfoData.schoolName}</p>
-            <p>{educationInfoData.course}</p>
-            <p>{educationInfoData.date}</p>
+            <div className="personalContainer">
+                <h3>{personalInfoData.name}</h3>
+                <p>{personalInfoData.email}</p>
+                <p>Phone Number: {personalInfoData.phone}</p>
+                <p>Address: {personalInfoData.address}</p>
+                <hr />
+            </div>
+            <div className="educationContainer">
+                <p>School: {educationInfoData.schoolName}</p>
+                <p>Course: {educationInfoData.course}</p>
+                <p>Course Start: {educationInfoData.startDate}</p>
+                <p>Course End: {educationInfoData.endDate}</p>
+                <hr />
+            </div>
+            <div className="workContainer">
+                <p>Company Name: {workInfoData.companyName}</p>
+                <p>Position Title: {workInfoData.positionTitle}</p>
+                <p>Responsibilities: {workInfoData.responsibilities}</p>
+                <p>Start Date: {workInfoData.startDate}</p>
+                <p>End Date: {workInfoData.endDate}</p>
+                <hr />
+            </div>
         </div>
     )
 }
