@@ -30,7 +30,7 @@ function App() {
 		<div className="mainContainer">
 			<h1>CV Generator</h1>
 			<button className="editButton" onClick={() => setEditMode(!editMode)}>
-				Edit
+				{!editMode ? "Edit" : "Block"}
 			</button>
 			<div className="contentContainer">
 				<div className="editContainer">
