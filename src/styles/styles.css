@@ -1,44 +1,76 @@
 body {
-  background-color: rgb(155, 168, 197);
-  margin: 0;
-  padding: 20px;
+    background-color: rgb(155, 168, 197);
+    margin: 0;
 }
 
 h1 {
-  text-align: center;
-  font-weight: 800;
+    text-align: center;
+    font-weight: 800;
+    margin: 10px 5px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
 }
 
 .contentContainer {
-  display: flex;
-  gap: 15px;
-  align-items: flex-start;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 .editContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 0.5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 0.5;
 }
 
-.editContainer > section, 
+.editContainer > section,
 .editContainer > div {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
+    background: rgba(255, 255, 255, 0.74);
+    padding: 10px 20px;
+    border-radius: 12px;
 }
-
 
 .displayContainer {
-  flex: 1.5;
-  background: white;
-  min-height: 64vh;
-  padding: 40px;
-  border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.74);
+    width: 50vw;
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.innerDisplayContainer {
+    padding: 50px;
 }
 
 label {
     padding-right: 5px;
+}
+
+.inputPair {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+button {
+    height: 2rem;
+    margin: 5px auto 10px;
+    color: #fff;
+    border-radius: 100px;
+    background-color: #7571afbe;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.editButton {
+    width: 5rem;
 }
